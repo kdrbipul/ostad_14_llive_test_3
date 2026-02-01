@@ -41,11 +41,14 @@ class HomeScreen extends StatelessWidget {
                 physics: NeverScrollableScrollPhysics(),
                 itemCount: 7,
                 itemBuilder: (context, index){
-                  return ListTile(
-                    title: Text('Hasan'),
-                    subtitle: Text('01717-777777'),
-                    leading: Icon(Icons.person, size: 32,),
-                    trailing: Icon(Icons.phone, color: Colors.blue, size: 32,),
+                  return Card(
+                    color: Colors.blueGrey.shade50,
+                    child: ListTile(
+                      title: Text('Hasan'),
+                      subtitle: Text('01717-777777'),
+                      leading: Icon(Icons.person, size: 32,),
+                      trailing: Icon(Icons.phone, color: Colors.blue, size: 32,),
+                    ),
                   );
                 }),
             ],
