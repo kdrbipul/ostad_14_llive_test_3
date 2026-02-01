@@ -14,6 +14,21 @@ class App extends StatelessWidget {
         appBarTheme:AppBarTheme(
           backgroundColor: Colors.blueGrey,
           centerTitle: true,
+          foregroundColor: Colors.white,
+        ),
+        inputDecorationTheme: InputDecorationThemeData(
+            border: OutlineInputBorder(
+                borderRadius: BorderRadius.circular(10)
+            )
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.blueGrey,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10)
+            )
+          )
         )
       ),
     );
